@@ -1,7 +1,7 @@
 {
     "package": {
-        "name": "wrk_tests",
-        "repo": "cpp_works",
+        "name": "cpp_works",
+        "repo": "wrk_tests",
         "subject": "maximumdroid",
         "vcs_url": "https://github.com/maximumdroid/wrk01_test_ci.git"
     },
