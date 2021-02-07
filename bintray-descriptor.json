@@ -1,0 +1,29 @@
+{
+    "package": {
+        "name": "wrk_tests",
+        "repo": "cpp_works",
+        "subject": "maximumdroid",
+        "vcs_url": "https://github.com/maximumdroid/wrk01_test_ci.git"
+    },
+    "version": {
+        "name": "__VERSION__",
+        "desc": "helloworld __VERSION__"
+    },
+    "licenses": [
+        "BSD"
+    ],
+    "desc": "Debian package built and deployed completely automatically",
+    "files": [
+        {
+            "includePattern": "./(.[^/]*(\\.deb)$)",
+            "uploadPattern": "$1",
+            "matrixParams": {
+                "deb_distribution": "focal",
+                "deb_component": "main",
+                "deb_architecture": "amd64"
+            }
+        }
+    ],
+    "publish": true,
+    "override": false
+}
