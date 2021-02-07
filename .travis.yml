@@ -1,6 +1,9 @@
 dist: xenial
 language: cpp
 compiler: gcc
+branches:
+  only:
+    - main
 addons:
   apt:
     packages:
