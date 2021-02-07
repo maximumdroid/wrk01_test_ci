@@ -1,9 +1,6 @@
 dist: xenial
 language: cpp
 compiler: gcc
-branches:
-  only:
-    - main
 addons:
   apt:
     packages:
@@ -25,3 +22,6 @@ deploy:
   file: bintray-descriptor.json
   user: $BINTRAY_USER
   key: $BINTRAY_API_KEY
+  on:
+    branch: main
+    
